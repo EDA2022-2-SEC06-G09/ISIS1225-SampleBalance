@@ -278,14 +278,11 @@ def getCrimesByRangeArea(analyzer, initialArea, FinalArea):
     """
     Retorna el numero de crimenes en un rango de areas
     """
-    lst = lt.values(analyzer["areaIndex"], initialDate, finalDate)
+    len = lt.
     totalcrimes = 0
     for lstdate in lt.iterator(lst):
         totalcrimes += lt.size(lstdate["lstcrimes"])
     return totalcrimes
-    totalcrimes = 0
-    return totalcrimes
-
 
 def getCrimesByRange(analyzer, initialDate, finalDate):
     """
